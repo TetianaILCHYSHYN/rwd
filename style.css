@@ -1,0 +1,179 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 1440px;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+
+header {
+  display: block;
+
+  width: 1440px;
+  height: 100px;
+}
+
+.content {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .Blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1170px;
+  margin-top: 90px;
+ }
+
+.manifest {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.posts {
+  display: flex;
+}
+
+.first {
+
+  position: relative;
+  display: inline-block;
+}
+
+.first img {
+  display: block;
+}
+
+.h1 {
+  position: absolute;
+  top: 100px;
+  left: 135px;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  font-weight: 500;
+
+}
+
+li {
+
+  list-style-type: none;
+  letter-spacing: 0.3em;
+  cursor: pointer;
+}
+
+hr {
+  width: 70%;
+  height: 1px;
+  margin-top: 2px;
+  border: 0;
+  background-color: none;
+}
+
+
+li:hover>hr {
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+li:hover {
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.Blog h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #7B7B7B;
+  letter-spacing: 0.1em;
+  
+}
+  
+.text {
+  letter-spacing: 0.05em;
+}
+
+p img {
+  margin-left: 20px;
+}
+ h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 23px;
+  letter-spacing: 0.1em;
+ }
+
+ .article1 {
+  padding-right: 120px;
+ }
+
+ .article {
+  padding-left: 120px;
+ }
+
+ .LatestPosts{
+  width: 1170px;
+
+ }
+
+
+ h3 {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  line-height: 166%;
+ }
+ 
+ h3 img {
+  float: right;
+ }
+
+ .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+ }
+ .heading p {
+  font-size: 12px;
+ }
+
+ .posts {
+  display: flex;
+  justify-content: space-between;
+ }
+  .posts img {
+    margin-bottom: 9px;
+  }
+
+ h4 {
+  font-size: 22px;
+  font-weight: 600;
+ }
+
