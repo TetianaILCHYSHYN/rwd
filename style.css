@@ -5,13 +5,34 @@ body {
   width: 1440px;
   margin: auto;
   background-color: #FFFFFF;
+  max-width: 100% ;
 }
 
 header {
-  display: block;
+  /*display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100% ;
+  min-width: 1440px;
+  min-height: 100px;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  min-height: 100px;
+  max-width: 100%;
+  box-sizing: border-box;
 
-  width: 1440px;
-  height: 100px;
+}
+
+#logo {
+  max-width: 142px;
+  max-height: 12px;
+}
+#search {
+  max-width: 17px;
+  max-height: 16px;
 }
 
 .content {
@@ -20,20 +41,27 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  
+  
 }
  .Blog {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1170px;
+  min-width: 1170px;
   margin-top: 90px;
+ 
  }
 
-.manifest {
+/*.manifest {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-top: 20px;
-}
+  max-width: 100%;
+  height: auto;
+}*/
 
 .posts {
   display: flex;
@@ -61,10 +89,11 @@ header {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-
   font-weight: 500;
-
+  margin: 0;
+  padding-left: 330px ;
 }
+
 
 li {
 
@@ -107,6 +136,7 @@ li:hover {
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
+  max-width: 100% ;
 }
 
 .content p {
@@ -139,7 +169,8 @@ p img {
 
  .LatestPosts{
   width: 1170px;
-
+  max-width: 100% ;
+  
  }
 
 
@@ -162,12 +193,41 @@ p img {
  }
  .heading p {
   font-size: 12px;
+  margin: 0;
  }
 
  .posts {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
  }
+
+ .post1-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+ }
+ .post2-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+ }
+ .post3-1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+ }
+ .post1-2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+ }
+ .post2-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+ }
+ .post3-2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+ }
+ 
   .posts img {
     margin-bottom: 9px;
   }
@@ -177,3 +237,20 @@ p img {
   font-weight: 600;
  }
 
+ img {
+  max-width: 100% ;
+  height: auto;
+  
+ }
+
+ @media screen and (max-width: 768px) {
+  .posts {
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+   }
+   .menu {
+   display: none;
+   }
+ }
