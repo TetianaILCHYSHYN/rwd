@@ -1,11 +1,17 @@
-body {
+body,
+main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   width: 1440px;
   margin: auto;
   background-color: #FFFFFF;
-  max-width: 100% ;
+  max-width: 100%;
+}
+
+main {
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 header {
@@ -30,29 +36,21 @@ header {
   max-width: 142px;
   max-height: 12px;
 }
+
 #search {
   max-width: 17px;
   max-height: 16px;
 }
 
-.content {
-  font-family: "Red Hat Display", sans-serif;
+.fest {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  
-  
+  max-width: 100%;
+  width: 1170px;
 }
- .Blog {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 1170px;
-  margin-top: 90px;
- 
- }
 
 /*.manifest {
   display: flex;
@@ -63,9 +61,7 @@ header {
   height: auto;
 }*/
 
-.posts {
-  display: flex;
-}
+
 
 .first {
 
@@ -77,11 +73,38 @@ header {
   display: block;
 }
 
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: transparent;
+}
+
+h5 {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  font-size: 30px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: transparent;
+}
+
 .h1 {
+
+  width: 770px;
+  height: 120px;
   position: absolute;
   top: 100px;
   left: 135px;
+
 }
+
+
 
 .menu {
   display: flex;
@@ -91,7 +114,7 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   margin: 0;
-  padding-left: 330px ;
+  padding-left: 330px;
 }
 
 
@@ -122,14 +145,25 @@ li:hover {
   transition: 0.5s;
 }
 
-.Blog h2 {
-  margin: 0;
+/*.fest {
+  display: flex;
+  flex-direction: column;
+  max-width: 1770px;
+  align-items: center;
+}*/
+
+
+
+.fest h2 {
+
   font-size: 48px;
   font-weight: 400;
   letter-spacing: 0.05em;
+  margin-inline-end: auto;
+  padding-top: 70px;
 }
 
-.one {
+/*.one {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,15 +171,15 @@ li:hover {
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 100% ;
-}
+}*/
 
-.content p {
+.fest p {
   font-size: 16px;
   color: #7B7B7B;
   letter-spacing: 0.1em;
-  
+
 }
-  
+
 .text {
   letter-spacing: 0.05em;
 }
@@ -153,104 +187,321 @@ li:hover {
 p img {
   margin-left: 20px;
 }
- h4 {
+
+h4 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 23px;
   letter-spacing: 0.1em;
- }
+}
 
- .article1 {
-  padding-right: 120px;
- }
-
- .article {
-  padding-left: 120px;
- }
-
- .LatestPosts{
+.Blog,
+.LatestPosts,
+.TheMostPopular {
   width: 1170px;
-  max-width: 100% ;
-  
- }
+  max-width: 100%;
+
+}
 
 
- h3 {
+h3 {
   font-size: 28px;
   letter-spacing: 0.1em;
   font-weight: 700;
   line-height: 166%;
- }
- 
- h3 img {
-  float: right;
- }
+}
 
- .heading {
+h3 img {
+  float: right;
+}
+
+.heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
- }
- .heading p {
+
+}
+
+.heading p {
   font-size: 12px;
   margin: 0;
- }
+}
 
- .posts {
+.posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
- }
+}
 
- .post1-1 {
+.post1-1 {
   grid-column: 1/2;
   grid-row: 1/2;
- }
- .post2-1 {
+}
+
+.post2-1 {
   grid-column: 2/3;
   grid-row: 1/2;
- }
- .post3-1 {
+}
+
+.post3-1 {
   grid-column: 3/4;
   grid-row: 1/2;
- }
- .post1-2 {
+}
+
+.post1-2 {
   grid-column: 1/2;
   grid-row: 2/3;
- }
- .post2-2 {
+}
+
+.post2-2 {
   grid-column: 2/3;
   grid-row: 2/3;
- }
- .post3-2 {
+}
+
+.post3-2 {
   grid-column: 3/4;
   grid-row: 2/3;
- }
- 
-  .posts img {
-    margin-bottom: 9px;
-  }
+}
 
- h4 {
+.posts img {
+  margin-bottom: 9px;
+  min-height: 260px;
+}
+
+h4 {
   font-size: 22px;
   font-weight: 600;
- }
+}
 
- img {
-  max-width: 100% ;
-  height: auto;
-  
- }
+.articles,
+.Blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
 
- @media screen and (max-width: 768px) {
+img {
+  max-width: 100%;
+  height: 100%;
+
+}
+
+button {
+  display: block;
+  width: 180px;
+  height: 46px;
+  background-color: #565656;
+  font-family: "Lato", sans-serif;;
+  color: #FFFFFF;
+  font-size: 16px;
+  position: absolute;
+  bottom: -100px;
+  right: 40%;
+}
+.TheMostPopular {
+  position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
   .posts {
-    
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    
+    gap: 30px;
+  }
+
+  .post1-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .post2-1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .post3-1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .post1-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .post2-2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .post3-2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .first .h1 {
+    display: none;
+  }
+
+  h1 {
+    color: #000000;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+
+
+
+  body,
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 1200px;
+    margin: auto;
+
+    min-width: 300px;
+  }
+
+  h1 {
+    color: transparent;
+
+    /* 
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  width: 100%;*/
+  }
+
+  .first h5 {
+    color: #000000;
+    position: absolute;
+    line-height: 50px;
+    top: 10px;
+    left: 455px;
+
+  }
+
+  img .bg {
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    top: 20px;
+    left: 150px;
+  }
+
+
+
+  .first .bg {
+
+    height: auto;
+    max-width: 1200px;
+  }
+
+  .fest h2 {
+
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: auto;
+
+  }
+
+  .Blog,
+  .posts,
+  .articles {
+      
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+     
+    }
+
+   .article1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
    }
-   .menu {
-   display: none;
+   .one {
+    grid-column: 1/2;
+    grid-row: 2/3;
    }
- }
+   .article {
+    grid-column: 1/2;
+    grid-row: 3/4;
+   }
+   .onee {
+    grid-column: 1/2;
+    grid-row: 4/5;
+   }
+   
+   .posts, .articles {
+    width: 300px;
+   }
+
+.post1-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.post2-1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.post3-1 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.post1-2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.post2-2 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.post3-2 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.posts img {
+  margin-bottom: 9px;
+  min-height: 260px;
+}
+ 
+.post-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.post-3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.post-2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.post-4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+button {
+  right: 25%;
+}
+
+
+  }
